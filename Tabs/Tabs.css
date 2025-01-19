@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+.blocheader {
+    background-color: rgb(51, 51, 51);
+    padding: 0.5% 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocpdp {
+    height: 8%;
+    width: 8%;
+    margin: 0% 2%;
+    object-fit: cover;
+}
+
+.bloctitre {
+    width: 65%;
+    align-content: center;
+}
+.titre {
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+}
+.soustitre {
+    font-size: 175%;
+    text-align: center;
+    color: white;
+}
+
+.comteclairSombre{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-com-lb {
+    background-color: white;
+    color: rgb(51, 51, 51);
+    border-radius: 5%;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin: 5% 0%;
+    padding: 2%;
+}
+.btn-com-lb:active {
+    color: lightblue;
+}
+.btn-com-lb a {
+   color: rgb(51, 51, 51);
+}
+.imgaccompt {
+    width: 25%;
+    margin-right: 5%;
+    object-fit: cover;
+}
+
+/*body*/
+main {
+    align-content: center;
+    flex-grow: 1;
+}
+
+/*Fil d'arianne*/
+.FillDariane {
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+.listeFDA li {
+    display: inline;
+}
+.listeFDA a {
+    position: relative;
+    margin-right: 5px;
+}
+
+/*filtre*/
+.filtreEtproduit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuFiltre {
+    width: 30%;
+    height: 505px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5%;
+    margin-bottom: 5px;
+    align-content: center;
+}
+
+#btn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.produit {
+    width: 70%;
+    height: 505px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    overflow: scroll;
+}
+
+/*tab*/
+.active {
+    font-weight: bold;
+}
+  
+.hide {
+    display:none;
+}
+  
+.afficher-contenu {
+    display: block;
+}
+
+.pokemonPlante {
+    border-radius: 5%;
+    width: 25%;
+    margin: 5px;
+    object-fit: cover;
+}
+.pokemonFeu {
+    border-radius: 5%;
+    width: 25%;
+    margin: 5px;
+    object-fit: cover;
+}
+
+/*footer*/
+footer {
+    height: 5%;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51);
+    font-size: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

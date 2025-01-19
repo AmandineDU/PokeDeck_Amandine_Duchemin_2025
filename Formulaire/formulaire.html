@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PokeDeck</title>
+      <link rel="stylesheet" href="Formulaire.css"/>
+    </head>
+
+    <body>
+        <header>
+            <section class="blocheader">
+                <img class="blocpdp" src="pokemon/icon.png" alt="PDP"> 
+                <div class="bloctitre">
+                    <p class="titre">PokeDeck</p>
+                    <p class="soustitre">Collection & stat du jeux de carte</p>
+                </div>
+                <section class="comteclairSombre">
+                    <button class="btn-com-lb">
+                        <p id="text-lb">Clair / Sombre</p>
+                    </button>
+                </section>
+            </section>
+        </header>
+
+        <main>
+            <div class="message-error">
+                <ul></ul>
+            </div>
+            <div class="message-success">
+                Formulaire envoyé !
+            </div>
+
+            <form action="" method="POST" id="form">
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" placeholder="Votre pseudo">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password" placeholder="Entrer à nouveau le mot de passe">
+                    <input type="password" name="password2" id="password2" placeholder="Entrer à nouveau le mot de passe">
+                </div>
+                <div>
+                    <select name="genre" id="">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+    
+                <button id="Envoie" type="submit">s'inscrire</button>
+                <div id="contenu-formulaire"></div>
+    
+            </form>
+        </main>
+
+        <footer>
+            <p>07 00 00 00 00 . PokeDeck@info.com</p>
+        </footer>
+    
+        <script src="./formulaire.js"></script>
+    </body>
+</html>
